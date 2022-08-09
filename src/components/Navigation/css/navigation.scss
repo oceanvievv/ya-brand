@@ -1,0 +1,46 @@
+.nav-wrapper {
+	@apply w-full h-[75px] bg-black;
+}
+
+.nav {
+	@apply
+		nav-container
+		h-full
+		bg-inherit
+		flex
+		items-center;
+
+	&__logo {
+		@apply
+			mr-[40px]
+			h-[36px]
+			select-none;
+	}
+	&__control {
+		@apply
+			select-none
+			cursor-pointer;
+	}
+	&__menu {
+		@apply
+			flex
+			gap-[33px]
+			ml-auto
+			items-center;
+	}
+	&__cart-count {
+		@apply
+			absolute
+			-top-[8px]
+			-right-[8px]
+			text-white
+			text-[13px]
+			w-[19px]
+			h-[19px]
+			bg-[#F16D7F]
+			rounded-full
+			text-center
+			align-top
+			inline-block;
+	}
+}
