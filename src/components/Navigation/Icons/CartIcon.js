@@ -5,11 +5,10 @@ export default function CartIcon(props) {
   console.log(props);
 
   return (
-    <Link to="/cart">
+    <Link to="/cart" style={{ position: "relative" }}>
       <span
         className="nav__control"
         onClick={() => console.log("Open cart page")}
-        style={{ position: "relative" }}
       >
         <svg
           width="32"
@@ -23,10 +22,12 @@ export default function CartIcon(props) {
             fill="#E8E8E8"
           />
         </svg>
-        {props.cartCount && (
-          <span className="nav__cart-count">{props.cartCount}</span>
-        )}
       </span>
+      {props.cartCount > 0 && (
+        <div className="nav__cart-count">
+          {props.cartCount > 99 ? "+99" : props.cartCount}
+        </div>
+      )}
     </Link>
   );
 }

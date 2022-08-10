@@ -3,7 +3,7 @@ import Logo from "assets/images/logo.png";
 import * as Icons from "./Icons";
 import "./css/navigation.scss";
 
-export function Navigation() {
+export function Navigation({ cartCount }) {
   return (
     <div className="nav-wrapper">
       <nav className="nav">
@@ -14,7 +14,7 @@ export function Navigation() {
         <div className="nav__menu">
           <Icons.BurgerIcon></Icons.BurgerIcon>
           <Icons.ProfileIcon></Icons.ProfileIcon>
-          <Icons.CartIcon cartCount={5}></Icons.CartIcon>
+          <Icons.CartIcon cartCount={cartCount}></Icons.CartIcon>
         </div>
       </nav>
     </div>
