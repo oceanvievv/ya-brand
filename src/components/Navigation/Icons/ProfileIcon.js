@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function ProfileIcon() {
   return (
-    <Link to="/register">
+    <NavLink to="/register">
       <span
         className="nav__control"
         onClick={() => console.log("Open profile page")}
@@ -20,6 +20,6 @@ export default function ProfileIcon() {
           />
         </svg>
       </span>
-    </Link>
+    </NavLink>
   );
 }

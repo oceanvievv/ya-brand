@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
 export default function CartIcon(props) {
   console.log(props);
 
   return (
-    <Link to="/cart" style={{ position: "relative" }}>
+    <NavLink to="/cart" style={{ position: "relative" }}>
       <span
         className="nav__control"
         onClick={() => console.log("Open cart page")}
@@ -28,7 +28,7 @@ export default function CartIcon(props) {
           {props.cartCount > 99 ? "+99" : props.cartCount}
         </div>
       )}
-    </Link>
+    </NavLink>
   );
 }
 
