@@ -1,7 +1,9 @@
+import { Promo } from "../components/Main Page/Promo/Promo";
+
 export function MainPage() {
   return (
     <div>
-      <p>Main Page</p>
+      <Promo />
     </div>
   );
 }

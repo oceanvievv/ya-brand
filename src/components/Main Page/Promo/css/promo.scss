@@ -1,0 +1,48 @@
+.promo-wrapper {
+	@apply
+		w-full
+		max-h-[765px]
+		min-h-[365px]
+		aspect-[1440/765]
+		flex;
+}
+
+.promo__example, .promo__brand {
+	@apply
+		basis-[50%];
+}
+
+.promo__example {
+	@apply
+		bg-center
+		bg-contain
+		bg-no-repeat;
+}
+.promo__brand {
+	@apply
+		flex
+		items-center
+		pl-[63px];
+
+	.promo__logo {
+		@apply
+			flex
+			items-center
+			flex-nowrap
+			gap-[16px];
+
+		.vert-line {
+			@apply
+				w-[19px]
+				h-[92px]
+				bg-losos;
+		}
+		.name {
+			@apply
+				flex
+				flex-col
+				items-start
+				flex-nowrap;
+		}
+	}
+}

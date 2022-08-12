@@ -5,14 +5,14 @@ import { ProductPage } from "./pages/ProductPage";
 import { CartPage } from "./pages/CartPage";
 import { RegisterPage } from "./pages/RegisterPage";
 import { Navigation } from "./components/Navigation/Navigation";
-import { useState } from "react";
+// import { useState } from "react";
 
 function App() {
-  const [cartCount, setCartCount] = useState(99);
+  // const [cartCount, setCartCount] = useState(99);
 
   return (
     <>
-      <Navigation cartCount={cartCount} />
+      <Navigation cartCount={5} />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/catalog" element={<CatalogPage />} />
@@ -21,18 +21,18 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
       </Routes>
 
-      <button
-        onClick={() => setCartCount(cartCount + 1)}
-        className="px-4 py-2 rounded bg-blue-400"
-      >
-        Add
-      </button>
-      <button
-        onClick={() => setCartCount(cartCount - 1)}
-        className="px-4 py-2 rounded bg-red-400"
-      >
-        Subtract
-      </button>
+      {/*<button*/}
+      {/*  onClick={() => setCartCount(cartCount + 1)}*/}
+      {/*  className="px-4 py-2 rounded bg-blue-400"*/}
+      {/*>*/}
+      {/*  Add*/}
+      {/*</button>*/}
+      {/*<button*/}
+      {/*  onClick={() => setCartCount(cartCount - 1)}*/}
+      {/*  className="px-4 py-2 rounded bg-red-400"*/}
+      {/*>*/}
+      {/*  Subtract*/}
+      {/*</button>*/}
     </>
   );
 }

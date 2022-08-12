@@ -2,8 +2,6 @@ import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
 export default function CartIcon(props) {
-  console.log(props);
-
   return (
     <NavLink to="/cart" className="relative hidden xsm:nav__menu_not-mobile">
       <span
