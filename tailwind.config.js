@@ -5,7 +5,12 @@ module.exports = {
     black: "#222222",
   },
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        xxsm: "320px",
+        xsm: "475px",
+      },
+    },
   },
   corePlugins: {
     container: false,
@@ -16,8 +21,14 @@ module.exports = {
         ".nav-container": {
           marginLeft: "auto",
           marginRight: "auto",
+          "@screen xxsm": {
+            padding: "0 16px",
+          },
+          "@screen xsm": {
+            padding: "0 32px",
+          },
           "@screen sm": {
-            padding: "0",
+            padding: "0 32px",
           },
           "@screen md": {
             padding: "0 32px",

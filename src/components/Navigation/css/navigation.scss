@@ -1,3 +1,5 @@
+@tailwind utilities;
+
 .nav-wrapper {
 	@apply w-full h-[75px] bg-black;
 }
@@ -45,5 +47,14 @@
 			bg-[#F16D7F]
 			rounded-full
 			block;
+	}
+}
+
+@responsive {
+	.nav__menu {
+		&_not-mobile {
+			@apply
+				block
+		}
 	}
 }

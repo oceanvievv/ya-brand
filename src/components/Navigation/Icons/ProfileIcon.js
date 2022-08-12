@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function ProfileIcon() {
   return (
-    <NavLink to="/register">
+    <NavLink to="/register" className="hidden xsm:nav__menu_not-mobile">
       <span
         className="nav__control"
         onClick={() => console.log("Open profile page")}

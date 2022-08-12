@@ -5,7 +5,7 @@ export default function CartIcon(props) {
   console.log(props);
 
   return (
-    <NavLink to="/cart" style={{ position: "relative" }}>
+    <NavLink to="/cart" className="relative hidden xsm:nav__menu_not-mobile">
       <span
         className="nav__control"
         onClick={() => console.log("Open cart page")}
