@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export default function CartIcon(props) {
   return (
-    <NavLink to="/cart" className="relative hidden xsm:nav__menu_not-mobile">
+    <NavLink to="/cart" className="relative hidden sm:nav__menu_not-mobile">
       <span
         className="nav__control"
         onClick={() => console.log("Open cart page")}
