@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         black: "#222222",
         losos: "#F16D7F",
+        ["light-gray"]: "#F1E4E6",
       },
     },
   },

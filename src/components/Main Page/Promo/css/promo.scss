@@ -1,3 +1,5 @@
+@tailwind utilities;
+
 .promo-wrapper {
 	@apply
 		w-full
@@ -7,22 +9,20 @@
 		flex;
 }
 
-.promo__example, .promo__brand {
-	@apply
-		basis-[50%];
-}
-
 .promo__example {
 	@apply
+		hidden
 		bg-center
 		bg-contain
 		bg-no-repeat;
 }
 .promo__brand {
 	@apply
+		w-full
 		flex
+		justify-center
 		items-center
-		pl-[63px];
+		bg-light-gray;
 
 	.promo__logo {
 		@apply
@@ -33,8 +33,8 @@
 
 		.vert-line {
 			@apply
-				w-[19px]
-				h-[92px]
+				w-[12px]
+				h-[61px]
 				bg-losos;
 		}
 		.name {
@@ -42,7 +42,79 @@
 				flex
 				flex-col
 				items-start
-				flex-nowrap;
+				gap-[6px]
+				flex-nowrap
+				whitespace-nowrap;
+		}
+	}
+}
+
+.brand-upper {
+	@apply
+		font-['Lato-900']
+		text-[38px]
+		leading-[1]
+		uppercase;
+}
+.brand-lower {
+	@apply
+		font-['Lato-700']
+		text-[20px]
+		leading-[1]
+		uppercase;
+}
+.brand-accent {
+	@apply
+		text-losos;
+}
+
+@responsive {
+	.promo__example {
+		&_sm {
+			@apply
+				block
+				basis-[50%];
+		}
+	}
+	.promo__brand {
+		&_sm {
+			@apply
+			basis-[50%];
+		}
+		&_lg {
+			@apply
+				justify-start
+				pl-[63px];
+		}
+	}
+
+	.promo__brand,
+	.promo__logo,
+	.vert-line {
+		&_md {
+			@apply
+				h-[92px];
+		}
+	}
+
+	.brand-upper {
+		&_md {
+			@apply
+				text-[44px]
+		}
+		&_lg {
+			@apply
+			text-[48px]
+		}
+	}
+	.brand-lower {
+		&_md {
+			@apply
+			text-[24px]
+		}
+		&_lg {
+			@apply
+			text-[32px]
 		}
 	}
 }

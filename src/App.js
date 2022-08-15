@@ -5,6 +5,8 @@ import { ProductPage } from "./pages/ProductPage";
 import { CartPage } from "./pages/CartPage";
 import { RegisterPage } from "./pages/RegisterPage";
 import { Navigation } from "./components/Navigation/Navigation";
+
+import "./assets/fonts/Lato/Lato.scss";
 // import { useState } from "react";
 
 function App() {
@@ -12,7 +14,7 @@ function App() {
 
   return (
     <>
-      <Navigation cartCount={5} />
+      <Navigation cartCount={55} />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/catalog" element={<CatalogPage />} />
