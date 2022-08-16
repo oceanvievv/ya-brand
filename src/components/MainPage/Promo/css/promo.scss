@@ -16,6 +16,7 @@
 		bg-contain
 		bg-no-repeat;
 }
+
 .promo__brand {
 	@apply
 		w-full
@@ -28,8 +29,8 @@
 		@apply
 			flex
 			items-center
-			flex-nowrap
-			gap-[16px];
+			gap-[16px]
+			flex-nowrap;
 
 		.vert-line {
 			@apply
@@ -72,19 +73,18 @@
 	.promo__example {
 		&_sm {
 			@apply
-				block
-				basis-[50%];
+				basis-[50%]
+				block;
 		}
 	}
 	.promo__brand {
 		&_sm {
-			@apply
-			basis-[50%];
+			flex-basis: 50%;
 		}
 		&_lg {
 			@apply
-				justify-start
-				pl-[63px];
+				pl-[63px]
+				justify-start;
 		}
 	}
 
@@ -92,29 +92,24 @@
 	.promo__logo,
 	.vert-line {
 		&_md {
-			@apply
-				h-[92px];
+			height: 72px;
 		}
 	}
 
 	.brand-upper {
 		&_md {
-			@apply
-				text-[44px]
+			font-size: 44px;
 		}
 		&_lg {
-			@apply
-			text-[48px]
+			font-size: 48px;
 		}
 	}
 	.brand-lower {
 		&_md {
-			@apply
-			text-[24px]
+			font-size: 24px;
 		}
 		&_lg {
-			@apply
-			text-[32px]
+			font-size: 32px;
 		}
 	}
 }

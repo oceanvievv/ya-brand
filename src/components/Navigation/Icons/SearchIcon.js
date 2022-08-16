@@ -5,9 +5,9 @@ export default function SearchIcon() {
       onClick={() => console.log("Open search field")}
     >
       <svg
-        width="26"
+        width="27"
         height="27"
-        viewBox="0 0 26 27"
+        viewBox="0 0 27 28"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >

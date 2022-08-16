@@ -1,4 +1,4 @@
-import { Promo } from "../components/Main Page/Promo/Promo";
+import { Promo } from "../components/MainPage/Promo/Promo";
 
 export function MainPage() {
   return (
