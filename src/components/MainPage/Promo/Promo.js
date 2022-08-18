@@ -14,7 +14,7 @@ export function Promo() {
       ></div>
       <div className="promo__brand sm:promo__brand_sm lg:promo__brand_lg">
         <div className="promo__logo">
-          <div className="vert-line md:vert-line_md"></div>
+          <div className="vert-line md:vert-line_md  lg:vert-line_lg"></div>
           <div className="name">
             <span className="brand-upper md:brand-upper_md lg:brand-upper_lg">
               The brand

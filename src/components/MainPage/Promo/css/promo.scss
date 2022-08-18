@@ -2,11 +2,24 @@
 
 .promo-wrapper {
 	@apply
+		box-border
 		w-full
 		max-h-[765px]
 		min-h-[365px]
-		aspect-[1440/765]
-		flex;
+		flex
+		bg-light-gray;
+
+	&::before {
+		float: left;
+		padding-top: 56.25%;
+		content: "";
+	}
+
+	&::after {
+		display: block;
+		content: "";
+		clear: both;
+	}
 }
 
 .promo__example {
@@ -22,8 +35,7 @@
 		w-full
 		flex
 		justify-center
-		items-center
-		bg-light-gray;
+		items-center;
 
 	.promo__logo {
 		@apply
@@ -88,11 +100,12 @@
 		}
 	}
 
-	.promo__brand,
-	.promo__logo,
 	.vert-line {
 		&_md {
 			height: 72px;
+		}
+		&_lg {
+			height: 92px;
 		}
 	}
 
