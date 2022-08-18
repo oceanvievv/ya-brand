@@ -81,7 +81,7 @@
 		text-losos;
 }
 
-@responsive {
+@layer utilities {
 	.promo__example {
 		&_sm {
 			@apply
@@ -100,7 +100,7 @@
 		}
 	}
 
-	.vert-line {
+	.promo__brand .promo__logo .vert-line {
 		&_md {
 			height: 72px;
 		}

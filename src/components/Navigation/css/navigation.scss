@@ -50,7 +50,7 @@
 	}
 }
 
-@responsive {
+@layer utilities {
 	.nav__menu {
 		&_not-mobile {
 			@apply
