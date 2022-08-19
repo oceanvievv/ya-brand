@@ -1,14 +1,22 @@
 @tailwind utilities;
 
+.promo {
+	@apply
+		flex
+		mb-[64px]
+		bg-light-gray;
+}
+
 .promo-wrapper {
 	@apply
 		box-border
 		w-full
+		max-w-[1440px]
 		max-h-[765px]
 		min-h-[365px]
 		flex
-		mb-[64px]
-		bg-light-gray;
+		ml-auto
+		mr-auto;
 
 	&::before {
 		float: left;

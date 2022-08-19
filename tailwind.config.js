@@ -39,11 +39,8 @@ module.exports = {
             padding: "0 32px",
           },
           "@screen xl": {
-            padding: "0",
-            maxWidth: "1140px",
-          },
-          "@screen 2xl": {
-            maxWidth: "1140px",
+            padding: "0 32px",
+            maxWidth: "1440px",
           },
         },
       });
