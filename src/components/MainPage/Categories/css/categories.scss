@@ -66,9 +66,8 @@
 		filter: brightness(40%);
 
 		&_common {
-			@apply
-				min-h-[111px]
-				max-h-[180px];
+			min-height: 111px;
+			max-height: 180px;
 
 			&::before {
 				float: left;
@@ -86,8 +85,8 @@
 			flex
 			flex-col
 			items-center
-			uppercase
-			gap-[5px];
+			gap-[5px]
+			uppercase;
 
 		transform: translate(-50%, -50%);
 
