@@ -2,8 +2,6 @@ import "./css/promo.scss";
 import PromoImage from "assets/images/promo/promo_1.png";
 
 export function Promo() {
-  console.log(PromoImage);
-
   return (
     <div className="promo-wrapper">
       <div

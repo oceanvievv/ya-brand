@@ -1,0 +1,122 @@
+@tailwind utilities;
+
+.categories-wrapper {
+	@apply
+		w-full
+		px-[16px]
+		mb-[64px]
+		flex
+		flex-col
+		gap-[32px]
+		items-center;
+
+	&_personalized {
+		@apply
+			w-full
+			max-w-[1440px]
+			flex
+			flex-col
+			gap-[32px]
+			items-center;
+	}
+
+	&_common {
+		@apply
+		w-full
+		max-w-[1440px]
+		flex
+		flex-col
+		gap-[32px]
+		items-center;
+	}
+}
+
+.category-wrapper {
+	@apply
+		w-full
+		flex
+		justify-center
+		relative;
+}
+
+.category-wrapper {
+	.category__img {
+		@apply
+			w-full
+			flex
+			items-center
+			justify-center
+			box-border
+			bg-center
+			bg-cover
+			bg-no-repeat;
+
+		&::before {
+			float: left;
+			padding-top: 72%;
+			content: "";
+		}
+
+		&::after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+
+		filter: brightness(40%);
+
+		&_common {
+			@apply
+				min-h-[111px]
+				max-h-[180px];
+
+			&::before {
+				float: left;
+				padding-top: 33%;
+				content: "";
+			}
+		}
+	}
+
+	.category__info {
+		@apply
+			absolute
+			left-[50%]
+			top-[50%]
+			flex
+			flex-col
+			items-center
+			uppercase
+			gap-[5px];
+
+		transform: translate(-50%, -50%);
+
+		&_descr {
+			@apply
+				font-['Lato-400']
+				text-[16px]
+				leading-[1]
+				text-white
+				whitespace-nowrap;
+		}
+
+		&_title {
+			@apply
+			font-['Lato-700']
+			text-[24px]
+			leading-[1]
+			text-losos
+			whitespace-nowrap;
+		}
+	}
+}
+
+@layer utilities {
+	.categories-wrapper_personalized {
+		&--md {
+			@apply
+				flex-row
+				justify-center;
+		}
+	}
+}

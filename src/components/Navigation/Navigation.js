@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import Logo from "assets/images/logo.png";
-import * as Icons from "./Icons";
+import * as Icons from "./js/Icons";
 import "./css/navigation.scss";
 
 export function Navigation({ cartCount }) {
