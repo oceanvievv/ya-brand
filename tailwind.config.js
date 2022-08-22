@@ -46,7 +46,7 @@ module.exports = {
           },
           "@screen xl": {
             padding: "0 32px",
-            maxWidth: "1440px",
+            maxWidth: "1140px",
           },
         },
       });
