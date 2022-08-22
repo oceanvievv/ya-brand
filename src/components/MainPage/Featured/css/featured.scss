@@ -1,0 +1,155 @@
+@tailwind utilities;
+
+.featured-wrapper {
+	@apply
+		w-full;
+
+	margin-bottom: 96px;
+}
+
+.featured__title {
+	@apply
+		ml-auto
+		mb-[64px]
+		mr-auto
+		text-center;
+
+	&_main {
+		@apply
+			font-['Lato-400']
+			mb-[8px]
+			text-[30px]
+			leading-[1]
+			text-black;
+	}
+
+	&_sub {
+		@apply
+			font-['Lato-400']
+			text-[14px]
+			leading-[1]
+			text-gray;
+	}
+}
+
+.featured-items {
+	@apply
+		ml-auto
+		mr-auto
+		mb-[40px]
+		w-full
+		max-w-[1140px]
+		px-[8px]
+		gap-[16px]
+		flex
+		justify-center
+		flex-row
+		flex-wrap;
+}
+
+.featured-item {
+	@apply
+		flex
+		max-w-[360px]
+		bg-pale-gray
+		flex-col;
+
+	&__img {
+		@apply
+			w-full
+			box-border
+			max-h-[420px]
+			bg-center
+			bg-cover
+			bg-no-repeat;
+
+		&::before {
+			float: left;
+			padding-top: 117%;
+			content: "";
+		}
+
+		&::after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+	}
+
+	&__info {
+		@apply
+			px-[16px]
+			pt-[25px]
+			pb-[20px]
+			text-left;
+
+		margin-top: 25px;
+	}
+
+	&__title {
+		@apply
+			font-["Lato-400"]
+			text-[13px]
+			mb-[13px]
+			text-deep-black;
+	}
+
+	&__descr {
+		@apply
+			font-["Lato-300"]
+			text-[14px]
+			mb-[18px]
+			text-dark-gray;
+	}
+
+	&__price {
+		@apply
+			font-["Lato-400"]
+			text-[16px]
+			text-losos;
+	}
+}
+
+.featured__show-more-btn {
+	@apply
+		ml-auto
+		mr-auto
+		text-pink
+		px-[38px]
+		py-[14px]
+		border-[1px]
+		border-solid
+		border-[red]
+		box-border
+		ease-in-out
+		duration-300
+		block;
+
+	@apply
+		hover:bg-white
+		hover:text-pink;
+}
+
+@layer utilities {
+	.featured-wrapper_md {
+		margin-bottom: 65px;
+	}
+	.featured-wrapper_lg {
+		margin-bottom: 96px;
+	}
+
+	.featured-items_md {
+		@apply
+			px-0;
+
+		gap: 30px;
+	}
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.featured__show-more-btn {
+		@apply
+			hover:bg-pink
+			hover:text-white;
+	}
+}
