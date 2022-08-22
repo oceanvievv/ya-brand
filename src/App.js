@@ -16,7 +16,7 @@ function App() {
     <>
       <Navigation cartCount={1000} />
       <Routes>
-        <Route path="" element={<MainPage />} />
+        <Route path="/" element={<MainPage />} />
         <Route path="/catalog" element={<CatalogPage />} />
         <Route path="/product" element={<ProductPage />} />
         <Route path="/cart" element={<CartPage />} />
