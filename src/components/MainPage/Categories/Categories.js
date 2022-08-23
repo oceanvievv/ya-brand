@@ -4,7 +4,7 @@ import Category from "./Category";
 
 export function Categories() {
   return (
-    <div className="categories-wrapper">
+    <div className="categories-wrapper lg:categories-wrapper_lg">
       <div className="categories-wrapper_personalized md:categories-wrapper_personalized--md">
         {categoriesData.personalized.map((data, i) => (
           <Category key={i} data={data} imgClass={"category__img"} />

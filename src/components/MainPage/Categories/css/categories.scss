@@ -111,6 +111,10 @@
 }
 
 @layer utilities {
+	.categories-wrapper_lg {
+		margin-bottom: 84px;
+	}
+
 	.categories-wrapper_personalized {
 		&--md {
 			@apply

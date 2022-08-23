@@ -91,6 +91,13 @@
 }
 
 @layer utilities {
+	.promo_md {
+		margin-bottom: 20px;
+	}
+	.promo_lg {
+		margin-bottom: 64px;
+	}
+
 	.promo__example {
 		&_sm {
 			@apply

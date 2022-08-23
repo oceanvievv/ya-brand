@@ -3,7 +3,7 @@ import PromoImage from "assets/images/promo/promo_1.png";
 
 export function Promo() {
   return (
-    <div className="promo">
+    <div className="promo md:promo_md lg:promo_lg">
       <div className="promo-wrapper">
         <div
           className="promo__example sm:promo__example_sm"
