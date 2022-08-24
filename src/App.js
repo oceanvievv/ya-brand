@@ -7,14 +7,14 @@ import { RegisterPage } from "./pages/RegisterPage";
 import { Navigation } from "./components/Navigation/Navigation";
 
 import "./assets/fonts/Lato/Lato.scss";
-// import { useState } from "react";
+import { useState } from "react";
 
 function App() {
-  // const [cartCount, setCartCount] = useState(99);
+  const [cartCount, setCartCount] = useState(1);
 
   return (
     <>
-      <Navigation cartCount={1000} />
+      <Navigation cartCount={cartCount} />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/catalog" element={<CatalogPage />} />
@@ -22,19 +22,6 @@ function App() {
         <Route path="/cart" element={<CartPage />} />
         <Route path="/register" element={<RegisterPage />} />
       </Routes>
-
-      {/*<button*/}
-      {/*  onClick={() => setCartCount(cartCount + 1)}*/}
-      {/*  className="px-4 py-2 rounded bg-blue-400"*/}
-      {/*>*/}
-      {/*  Add*/}
-      {/*</button>*/}
-      {/*<button*/}
-      {/*  onClick={() => setCartCount(cartCount - 1)}*/}
-      {/*  className="px-4 py-2 rounded bg-red-400"*/}
-      {/*>*/}
-      {/*  Subtract*/}
-      {/*</button>*/}
     </>
   );
 }

@@ -14,7 +14,7 @@ export function Navigation({ cartCount }) {
         <div className="nav__menu">
           <Icons.BurgerIcon></Icons.BurgerIcon>
           <Icons.ProfileIcon></Icons.ProfileIcon>
-          <Icons.CartIcon cartCount={cartCount}></Icons.CartIcon>
+          <Icons.CartIcon cartCount={cartCount} classes={"relative hidden sm:nav__menu_not-mobile"}></Icons.CartIcon>
         </div>
       </nav>
     </div>

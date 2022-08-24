@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 
 export default function CartIcon(props) {
   return (
-    <NavLink to="/cart" className="relative hidden sm:nav__menu_not-mobile">
+    <NavLink to="/cart" className={props.classes}>
       <span
         className="nav__control"
         onClick={() => console.log("Open cart page")}
       >
         <svg
-          width="32"
-          height="29"
+          width={props.width || "32"}
+          height={props.height || "29"}
           viewBox="0 0 32 29"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -32,4 +32,7 @@ export default function CartIcon(props) {
 
 CartIcon.propTypes = {
   cartCount: PropTypes.number.isRequired,
+  width: PropTypes.number,
+  height: PropTypes.number,
+  classes: PropTypes.string,
 };
