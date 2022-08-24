@@ -1,7 +1,13 @@
 @tailwind utilities;
 
 .nav-wrapper {
-	@apply w-full h-[75px] bg-black;
+	@apply
+		w-full
+		fixed
+		top-0
+		h-[75px]
+		z-10
+		bg-black;
 }
 
 .nav {
