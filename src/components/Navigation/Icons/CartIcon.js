@@ -1,12 +1,10 @@
-import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
 export default function CartIcon(props) {
   return (
-    <NavLink to="/cart" className={props.classes}>
+    <div className={props.classes}>
       <span
         className="nav__control"
-        onClick={() => console.log("Open cart page")}
       >
         <svg
           width={props.width || "32"}
@@ -26,7 +24,7 @@ export default function CartIcon(props) {
           {props.cartCount > 99 ? "+99" : props.cartCount}
         </div>
       )}
-    </NavLink>
+    </div>
   );
 }
 
