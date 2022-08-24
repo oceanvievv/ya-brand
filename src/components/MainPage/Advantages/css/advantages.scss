@@ -1,0 +1,69 @@
+@tailwind utilities;
+
+.advantages {
+	@apply
+		bg-black
+		pt-[48px]
+		pb-[81px]
+		w-full;
+}
+
+.advantages-items-wrapper {
+	@apply
+		ml-auto
+		mr-auto
+		flex
+		gap-[47px]
+		flex-col
+		items-center;
+}
+
+.advantages-item {
+	@apply
+		flex
+		max-w-[347px]
+		flex-col
+		text-center;
+
+	&__icon {
+		@apply
+			ml-auto
+			mr-auto;
+
+		margin-bottom: 27px;
+	}
+
+	&__title {
+		@apply
+			font-["Lato-400"];
+
+		margin-bottom: 15px;
+		font-size: 20px;
+		color: #FBFBFB;
+	}
+
+	&__descr {
+		@apply
+			font-["Lato-300"];
+
+		font-size: 14px;
+		color: #FBFBFB;
+	}
+}
+
+@layer utilities {
+	.advantages_md {
+		padding-top: 48px;
+		padding-bottom: 64px;
+	}
+	.advantages_lg {
+		padding-top: 104px;
+		padding-bottom: 104px;
+	}
+	.advantages-items-wrapper_lg {
+		@apply
+			flex-row
+			gap-[30px]
+			justify-center;
+	}
+}
