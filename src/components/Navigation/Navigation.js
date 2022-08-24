@@ -13,11 +13,11 @@ export function Navigation({ cartCount }) {
         <Icons.SearchIcon></Icons.SearchIcon>
         <div className="nav__menu">
           <Icons.BurgerIcon></Icons.BurgerIcon>
-          <NavLink to="/register" className="hidden xsm:nav__menu_not-mobile">
+          <NavLink to="/register" className="hidden sm:nav__menu_not-mobile">
             <Icons.ProfileIcon></Icons.ProfileIcon>
           </NavLink>
-          <NavLink to="/cart">
-            <Icons.CartIcon cartCount={cartCount} classes={"relative hidden sm:nav__menu_not-mobile"}></Icons.CartIcon>
+          <NavLink to="/cart" className="relative hidden sm:nav__menu_not-mobile">
+            <Icons.CartIcon cartCount={cartCount}></Icons.CartIcon>
           </NavLink>
         </div>
       </nav>
