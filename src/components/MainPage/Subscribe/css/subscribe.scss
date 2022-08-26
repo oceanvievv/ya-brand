@@ -1,0 +1,174 @@
+.subscribe {
+	@apply
+		relative
+		pt-[55px]
+		pb-[110px]
+		px-[20px];
+
+	&::before {
+		float: left;
+		padding-top: 135%;
+		content: "";
+	}
+
+	&::after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+
+	&-bg {
+		@apply
+			absolute
+			top-0
+			left-0
+			w-full
+			h-full
+			bg-cover
+			bg-center
+			bg-no-repeat
+			opacity-[.5];
+	}
+}
+
+.subscribe__quote-and-form-wrapper {
+	@apply
+		w-full
+		absolute
+		top-[50%]
+		left-[50%]
+		px-[20px]
+		flex
+		flex-col
+		gap-[60px];
+
+	transform: translate(-50%, -50%);
+}
+
+.subscribe__quote {
+	@apply
+		w-full;
+
+	&-pfp {
+		@apply
+			w-[92px]
+			h-[92px]
+			rounded-full
+			bg-cover
+			bg-center
+			bg-no-repeat
+			mb-[30px]
+			ml-auto
+			mr-auto;
+	}
+
+	&-text {
+		@apply
+			text-[19px]
+			text-black
+			text-center;
+
+		&_italic {
+			@apply
+				italic;
+		}
+	}
+}
+
+.subscribe__form {
+	@apply
+		w-full;
+
+	&-title {
+		@apply
+			text-black
+			text-center
+			mb-[22px];
+
+		&_main {
+			@apply
+				font-["Lato-700"]
+				text-[24px]
+				block;
+		}
+
+		&_sub {
+			@apply
+				font-["Lato-400"]
+				text-[14px]
+				block;
+		}
+	}
+
+	&-input {
+		@apply
+			w-full
+			max-w-[341px]
+			h-[47px]
+			pl-[25px]
+			ml-auto
+			mr-auto
+			flex
+			flex-nowrap
+			items-center
+			bg-[#E1E1E1]
+			rounded-full
+			box-border;
+
+		&-wrapper {
+			@apply
+				w-full;
+
+			flex: 1 1 70%;
+
+			input {
+				@apply
+					w-full
+					pr-[8px]
+					bg-[#E1E1E1]
+					font-["Lato-400"]
+					text-[14px];
+
+				&::placeholder {
+					@apply
+						text-black
+						opacity-[.67];
+				}
+
+				&:focus {
+					@apply
+						outline-0;
+				}
+			}
+		}
+
+		&-btn {
+			@apply
+				box-border
+				font-["Lato-400"]
+				text-[14px]
+				text-white
+				w-full
+				h-full
+				rounded-r-full
+				border-[1px]
+				border-solid
+				border-transparent
+				bg-losos;
+
+			flex: 1 1 35%;
+			-webkit-tap-highlight-color: transparent;
+			transition: all 0.250s;
+
+			&:hover {
+				@apply
+					opacity-80;
+			}
+
+			&:active {
+				@apply
+					opacity-100;
+			}
+		}
+	}
+}
