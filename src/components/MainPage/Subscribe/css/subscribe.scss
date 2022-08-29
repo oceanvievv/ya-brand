@@ -1,3 +1,5 @@
+@tailwind utilities;
+
 .subscribe {
 	@apply
 		relative
@@ -5,9 +7,11 @@
 		pb-[110px]
 		px-[20px];
 
+	max-height: 550px;
+
 	&::before {
 		float: left;
-		padding-top: 135%;
+		padding-top: 112%;
 		content: "";
 	}
 
@@ -26,8 +30,8 @@
 			h-full
 			bg-cover
 			bg-center
-			bg-no-repeat
-			opacity-[.5];
+			opacity-[.5]
+			bg-no-repeat;
 	}
 }
 
@@ -38,9 +42,9 @@
 		top-[50%]
 		left-[50%]
 		px-[20px]
+		gap-[60px]
 		flex
-		flex-col
-		gap-[60px];
+		flex-col;
 
 	transform: translate(-50%, -50%);
 }
@@ -51,9 +55,9 @@
 
 	&-pfp {
 		@apply
+			rounded-full
 			w-[92px]
 			h-[92px]
-			rounded-full
 			bg-cover
 			bg-center
 			bg-no-repeat
@@ -64,8 +68,11 @@
 
 	&-text {
 		@apply
+			ml-auto
+			mr-auto
 			text-[19px]
 			text-black
+			max-w-[343px]
 			text-center;
 
 		&_italic {
@@ -82,8 +89,8 @@
 	&-title {
 		@apply
 			text-black
-			text-center
-			mb-[22px];
+			mb-[22px]
+			text-center;
 
 		&_main {
 			@apply
@@ -123,21 +130,21 @@
 
 			input {
 				@apply
-					w-full
 					pr-[8px]
 					bg-[#E1E1E1]
 					font-["Lato-400"]
-					text-[14px];
+					text-[14px]
+					w-full;
 
 				&::placeholder {
 					@apply
-						text-black
-						opacity-[.67];
+						opacity-[.67]
+						text-black;
 				}
 
 				&:focus {
 					@apply
-						outline-0;
+						outline-none;
 				}
 			}
 		}
@@ -159,16 +166,57 @@
 			flex: 1 1 35%;
 			-webkit-tap-highlight-color: transparent;
 			transition: all 0.250s;
+		}
+	}
+}
 
-			&:hover {
-				@apply
-					opacity-80;
-			}
+@layer utilities {
+	.subscribe_md {
+		max-height: 693px;
+	}
 
-			&:active {
-				@apply
-					opacity-100;
-			}
+	.subscribe_lg {
+		max-height: 448px;
+	}
+
+	.subscribe__quote-and-form-wrapper_md {
+		top: 43%;
+	}
+
+	.subscribe__quote-and-form-wrapper_lg {
+		@apply
+			max-w-[1140px]
+			top-[50%]
+			p-0
+			gap-0
+			justify-center
+			items-center
+			flex-row;
+	}
+
+	.subscribe__quote-text_md {
+		font-size: 20px;
+	}
+
+	.subscribe__form-title_main--md {
+		font-size: 20px;
+	}
+
+	.subscribe__form-title_sub--md {
+		font-size: 18px;
+	}
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.subscribe__form-input-btn {
+		&:hover {
+			@apply
+				opacity-80;
+		}
+
+		&:active {
+			@apply
+				opacity-100;
 		}
 	}
 }

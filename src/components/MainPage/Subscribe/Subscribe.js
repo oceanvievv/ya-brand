@@ -4,14 +4,14 @@ import SubscribePfp from "assets/images/subscribe/subscribe_pfp.png";
 
 export default function Subscribe() {
   return (
-    <div className="subscribe">
+    <div className="subscribe md:subscribe_md lg:subscribe_lg">
       <div
         className="subscribe-bg"
         style={{
           backgroundImage: `url(${SubscribeBg})`,
         }}
       ></div>
-      <div className="subscribe__quote-and-form-wrapper">
+      <div className="subscribe__quote-and-form-wrapper md:subscribe__quote-and-form-wrapper_md lg:subscribe__quote-and-form-wrapper_lg">
         <div className="subscribe__quote">
           <div
             className="subscribe__quote-pfp"
@@ -19,7 +19,7 @@ export default function Subscribe() {
               backgroundImage: `url(${SubscribePfp})`,
             }}
           ></div>
-          <div className="subscribe__quote-text">
+          <div className="subscribe__quote-text md:subscribe__quote-text_md">
             “Vestibulum quis porttitor dui! Quisque viverra nunc mi,{" "}
             <span className="subscribe__quote-text_italic">
               a pulvinar purus condimentum
@@ -29,12 +29,14 @@ export default function Subscribe() {
         </div>
         <form className="subscribe__form">
           <div className="subscribe__form-title">
-            <span className="subscribe__form-title_main">SUBSCRIBE</span>
-            <span className="subscribe__form-title_sub">
+            <span className="subscribe__form-title_main md:subscribe__form-title_main--md">
+              SUBSCRIBE
+            </span>
+            <span className="subscribe__form-title_sub md:subscribe__form-title_sub--md">
               FOR OUR NEWSLETTER AND PROMOTION
             </span>
           </div>
-          <div className="subscribe__form-input">
+          <div className="subscribe__form-input md:subscribe__form-input_md">
             <div className="subscribe__form-input-wrapper">
               <input type="email" placeholder="Enter Your Email" />
             </div>
