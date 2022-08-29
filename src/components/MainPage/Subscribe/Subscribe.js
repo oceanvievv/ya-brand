@@ -4,14 +4,16 @@ import SubscribePfp from "assets/images/subscribe/subscribe_pfp.png";
 
 export default function Subscribe() {
   return (
-    <div className="subscribe md:subscribe_md lg:subscribe_lg">
-      <div
-        className="subscribe-bg"
-        style={{
-          backgroundImage: `url(${SubscribeBg})`,
-        }}
-      ></div>
-      <div className="subscribe__quote-and-form-wrapper md:subscribe__quote-and-form-wrapper_md lg:subscribe__quote-and-form-wrapper_lg">
+    <div
+      className="subscribe md:subscribe_md lg:subscribe_lg"
+      style={{
+        background: `linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url(${SubscribeBg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="subscribe__quote-and-form-wrapper lg:subscribe__quote-and-form-wrapper_lg">
         <div className="subscribe__quote">
           <div
             className="subscribe__quote-pfp"

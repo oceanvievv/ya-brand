@@ -2,56 +2,26 @@
 
 .subscribe {
 	@apply
-		relative
 		pt-[55px]
 		pb-[110px]
 		px-[20px];
 
 	max-height: 550px;
-
-	&::before {
-		float: left;
-		padding-top: 112%;
-		content: "";
-	}
-
-	&::after {
-		display: block;
-		content: "";
-		clear: both;
-	}
-
-	&-bg {
-		@apply
-			absolute
-			top-0
-			left-0
-			w-full
-			h-full
-			bg-cover
-			bg-center
-			opacity-[.5]
-			bg-no-repeat;
-	}
 }
 
 .subscribe__quote-and-form-wrapper {
 	@apply
 		w-full
-		absolute
-		top-[50%]
-		left-[50%]
 		px-[20px]
 		gap-[60px]
 		flex
-		flex-col;
-
-	transform: translate(-50%, -50%);
+		flex-col
+		items-center;
 }
 
 .subscribe__quote {
 	@apply
-		w-full;
+		w-fit;
 
 	&-pfp {
 		@apply
@@ -84,7 +54,7 @@
 
 .subscribe__form {
 	@apply
-		w-full;
+		w-fit;
 
 	&-title {
 		@apply
@@ -172,6 +142,7 @@
 
 @layer utilities {
 	.subscribe_md {
+		padding-top: 110px;
 		max-height: 693px;
 	}
 
@@ -179,17 +150,14 @@
 		max-height: 448px;
 	}
 
-	.subscribe__quote-and-form-wrapper_md {
-		top: 43%;
-	}
-
 	.subscribe__quote-and-form-wrapper_lg {
 		@apply
+			ml-auto
+			mr-auto
 			max-w-[1140px]
-			top-[50%]
 			p-0
 			gap-0
-			justify-center
+			justify-around
 			items-center
 			flex-row;
 	}
