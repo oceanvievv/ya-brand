@@ -59,8 +59,7 @@
 @layer utilities {
 	.nav__menu {
 		&_not-mobile {
-			@apply
-				block
+			display: block !important;
 		}
 	}
 }
