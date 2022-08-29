@@ -8,28 +8,28 @@ export default function Footer() {
         <div className="footer__socials">
           <a
             href="https://www.facebook.com/"
-            target="_blank"
+            rel="noopener"
             className="footer__socials-item"
           >
             <FooterIcons.Facebook />
           </a>
           <a
             href="https://www.instagram.com/"
-            target="_blank"
+            rel="noopener"
             className="footer__socials-item"
           >
             <FooterIcons.Instagram />
           </a>
           <a
             href="https://ru.pinterest.com/"
-            target="_blank"
+            rel="noopener"
             className="footer__socials-item"
           >
             <FooterIcons.Pinterest />
           </a>
           <a
             href="https://twitter.com/"
-            target="_blank"
+            rel="noopener"
             className="footer__socials-item"
           >
             <FooterIcons.Twitter />

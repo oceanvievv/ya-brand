@@ -1,3 +1,2 @@
 1) 404-Page
 2) CSS namespaces
-3) Fix empty space on desktop beneath app (advantages:after)
