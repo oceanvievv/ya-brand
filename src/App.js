@@ -8,6 +8,7 @@ import { Navigation } from "./components/Navigation/Navigation";
 
 import "./assets/fonts/Lato/Lato.scss";
 import { useState } from "react";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [cartCount, setCartCount] = useState(1);
@@ -22,6 +23,7 @@ function App() {
         <Route path="/cart" element={<CartPage />} />
         <Route path="/register" element={<RegisterPage />} />
       </Routes>
+      <Footer />
     </>
   );
 }

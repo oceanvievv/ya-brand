@@ -1,0 +1,83 @@
+@tailwind utilities;
+
+.footer-wrapper {
+	@apply
+		w-full
+		text-center
+		px-[16px]
+		pt-[43px]
+		pb-[9px]
+		bg-black;
+}
+
+.footer {
+	@apply
+		w-[100%]
+		gap-[40px]
+		flex
+		flex-col;
+
+	&__socials {
+		@apply
+			flex
+			flex-row
+			flex-nowrap
+			gap-[8px]
+			justify-center;
+
+		&-item {
+			@apply
+				w-[32px]
+				h-[32px]
+				bg-white
+				flex
+				items-center
+				justify-center;
+		}
+	}
+
+	&__copyright {
+		@apply
+			font-["Lato-400"]
+			text-[16px]
+			text-white;
+	}
+}
+
+@layer utilities {
+	.footer-wrapper_md {
+		padding: 0;
+	}
+
+	.footer_md {
+		@apply
+			ml-auto
+			mr-auto
+			px-[32px]
+			py-[24px]
+			flex-row-reverse
+			items-center
+			gap-[0]
+			justify-between;
+	}
+
+	.footer_lg {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	.footer_xl {
+		max-width: 1140px;
+	}
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.footer__socials-item:hover {
+		@apply
+			bg-losos;
+
+		svg {
+			fill: white;
+		}
+	}
+}
