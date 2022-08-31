@@ -1,6 +1,7 @@
-import { CartIcon } from "../../base/Navigation/js/Icons";
+import { CartIcon } from "../Navigation/js/Icons";
+import "./css/product-card.scss";
 
-export default function FeaturedItem({ data }) {
+export default function ProductCard({ data }) {
   return (
     <div className="featured-item">
       <div
@@ -13,7 +14,7 @@ export default function FeaturedItem({ data }) {
           <button
             className="featured-item__to-cart-btn"
             onClick={() => {
-              console.log("zhopa");
+              console.log("Added to cart");
             }}
           >
             <CartIcon

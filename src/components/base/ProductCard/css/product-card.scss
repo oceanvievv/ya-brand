@@ -1,0 +1,98 @@
+@tailwind utilities;
+
+.featured-item {
+	@apply
+		flex
+		max-w-[360px]
+		bg-pale-gray
+		flex-col;
+
+	&__img {
+		@apply
+			w-full
+			box-border
+			max-h-[420px]
+			bg-center
+			bg-cover
+			bg-no-repeat;
+
+		&::before {
+			float: left;
+			padding-top: 117%;
+			content: "";
+		}
+
+		&::after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+
+		&_hovered {
+			@apply
+				ease-in-out
+				duration-300
+				opacity-0
+				w-full
+				h-full
+				bg-[#3A3838]
+				relative;
+		}
+	}
+
+	&__to-cart-btn {
+		@apply
+			absolute
+			top-[50%]
+			left-[50%]
+			translate-x-[-50%]
+			translate-y-[-50%]
+			border-[1px]
+			border-solid
+			border-white
+			px-[13px]
+			py-[10px]
+			text-white
+			block;
+	}
+
+	&__info {
+		@apply
+			mt-[25px]
+			px-[16px]
+			pt-[25px]
+			pb-[20px]
+			text-left;
+	}
+
+	&__title {
+		@apply
+			font-["Lato-400"]
+			text-[13px]
+			mb-[13px]
+			text-deep-black;
+	}
+
+	&__descr {
+		@apply
+			font-["Lato-300"]
+			text-[14px]
+			mb-[18px]
+			text-dark-gray;
+	}
+
+	&__price {
+		@apply
+			font-["Lato-400"]
+			text-[16px]
+			text-losos;
+	}
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.featured-item__img:hover {
+		.featured-item__img_hovered {
+			opacity: 0.86;
+		}
+	}
+}

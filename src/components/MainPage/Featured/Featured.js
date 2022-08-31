@@ -1,6 +1,6 @@
 import "./css/featured.scss";
 import featuredData from "./js/featuredData";
-import FeaturedItem from "./FeaturedItem";
+import ProductCard from "../../base/ProductCard/ProductCard";
 
 export default function Featured() {
   return (
@@ -13,7 +13,7 @@ export default function Featured() {
       </div>
       <div className="featured-items md:featured-items_md">
         {featuredData.map((data, i) => (
-          <FeaturedItem key={i} data={data} />
+          <ProductCard key={i} data={data} />
         ))}
       </div>
       <button
