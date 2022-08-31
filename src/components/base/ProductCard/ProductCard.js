@@ -1,5 +1,6 @@
 import { CartIcon } from "../Navigation/js/Icons";
 import "./css/product-card.scss";
+import { formatCurrency } from "../../../utils/formatCurrency.ts";
 
 export default function ProductCard({ data }) {
   return (
@@ -30,7 +31,7 @@ export default function ProductCard({ data }) {
       <div className="featured-item__info">
         <div className="featured-item__title">{data.title}</div>
         <div className="featured-item__descr">{data.descr}</div>
-        <div className="featured-item__price">{"$" + data.price}</div>
+        <div className="featured-item__price">{formatCurrency(data.price)}</div>
       </div>
     </div>
   );
