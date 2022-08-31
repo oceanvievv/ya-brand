@@ -1,4 +1,4 @@
-import { CartIcon } from "../../Navigation/js/Icons";
+import { CartIcon } from "../../base/Navigation/js/Icons";
 
 export default function FeaturedItem({ data }) {
   return (
@@ -10,8 +10,18 @@ export default function FeaturedItem({ data }) {
         }}
       >
         <div className="featured-item__img_hovered">
-          <button className="featured-item__to-cart-btn" onClick={() => {console.log("zhopa")}}>
-            <CartIcon cartCount={0} width={26} height={23} classes="inline-block align-middle mr-[10px]"/>
+          <button
+            className="featured-item__to-cart-btn"
+            onClick={() => {
+              console.log("zhopa");
+            }}
+          >
+            <CartIcon
+              cartCount={0}
+              width={26}
+              height={23}
+              classes="inline-block align-middle mr-[10px]"
+            />
             <span className="font-[Lato-400] text-[14px]">Add to cart</span>
           </button>
         </div>
