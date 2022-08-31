@@ -1,5 +1,5 @@
 import "./css/advantages.scss";
-import advantagesData from "../Advantages/js/advantagesData";
+import advantagesData from "./js/advantagesData";
 import AdvantageItem from "./AdvantageItem";
 
 export default function Advantages() {
