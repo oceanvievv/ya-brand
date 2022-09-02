@@ -8,7 +8,7 @@ export default function ProductCard({ data }) {
       <div
         className="featured-item__img"
         style={{
-          backgroundImage: `url(${data.img})`,
+          backgroundImage: `url(${data.image})`,
         }}
       >
         <div className="featured-item__img_hovered">
@@ -30,7 +30,7 @@ export default function ProductCard({ data }) {
       </div>
       <div className="featured-item__info">
         <div className="featured-item__title">{data.title}</div>
-        <div className="featured-item__descr">{data.descr}</div>
+        <div className="featured-item__descr">{data.description}</div>
         <div className="featured-item__price">{formatCurrency(data.price)}</div>
       </div>
     </div>
