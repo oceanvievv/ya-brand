@@ -9,34 +9,36 @@
 
 	&__img {
 		@apply
+			relative
 			w-full
 			box-border
+			h-full
 			max-h-[420px]
+			bg-white
 			bg-center
 			bg-cover
 			bg-no-repeat;
 
-		&::before {
-			float: left;
-			padding-top: 117%;
-			content: "";
-		}
-
-		&::after {
-			display: block;
-			content: "";
-			clear: both;
+		img {
+			@apply
+				object-contain
+				w-full
+				h-full;
 		}
 
 		&_hovered {
 			@apply
+				absolute
+				top-[50%]
+				left-[50%]
 				ease-in-out
 				duration-300
 				opacity-0
 				w-full
 				h-full
-				bg-[#3A3838]
-				relative;
+				bg-[#3A3838];
+
+			transform: translate(-50%, -50%);
 		}
 	}
 
@@ -58,6 +60,9 @@
 
 	&__info {
 		@apply
+			flex
+			flex-col
+			flex-grow-[1]
 			mt-[25px]
 			px-[16px]
 			pt-[25px]
@@ -67,6 +72,10 @@
 
 	&__title {
 		@apply
+			overflow-ellipsis
+			whitespace-nowrap
+			overflow-hidden
+			uppercase
 			font-["Lato-400"]
 			text-[13px]
 			mb-[13px]
@@ -75,10 +84,16 @@
 
 	&__descr {
 		@apply
+			flex-grow-[1]
 			font-["Lato-300"]
 			text-[14px]
 			mb-[18px]
 			text-dark-gray;
+
+		&:first-letter {
+			@apply
+				capitalize;
+		}
 	}
 
 	&__price {

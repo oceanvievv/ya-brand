@@ -5,12 +5,8 @@ import { formatCurrency } from "../../../utils/formatCurrency.ts";
 export default function ProductCard({ data }) {
   return (
     <div className="featured-item">
-      <div
-        className="featured-item__img"
-        style={{
-          backgroundImage: `url(${data.image})`,
-        }}
-      >
+      <div className="featured-item__img">
+        <img src={data.image} alt={data.title} />
         <div className="featured-item__img_hovered">
           <button
             className="featured-item__to-cart-btn"
