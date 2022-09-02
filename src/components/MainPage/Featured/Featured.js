@@ -1,10 +1,23 @@
 import "./css/featured.scss";
 import featuredData from "./js/featuredData";
 import ProductCard from "../../base/ProductCard/ProductCard";
+import { useEffect, useState } from "react";
+import { fetchFeaturedProducts } from "../../../data/data";
 
 export default function Featured() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetchFeaturedProducts(setProducts).then();
+  }, []);
+
   return (
     <div className="featured-wrapper featured-wrapper_md featured-wrapper_lg">
+      {products.map((product) => (
+        <span style={{ display: "block" }} key={product.id}>
+          {product.title}
+        </span>
+      ))}
       <div className="featured__title">
         <div className="featured__title_main">Featured items</div>
         <div className="featured__title_sub">
