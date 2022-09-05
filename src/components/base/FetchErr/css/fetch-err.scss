@@ -1,0 +1,33 @@
+@tailwind utilities;
+
+.fetch-err-wrapper {
+	@apply
+		px-[18px]
+		mb-[50px]
+		text-center;
+}
+
+.fetch-err {
+	&__type {
+		@apply
+			text-[24px]
+			mb-[10px]
+			block;
+	}
+
+	&__err {
+		@apply
+			text-[20px]
+			block;
+	}
+}
+
+@layer utilities {
+	.fetch-err__type_md {
+		font-size: 28px;
+	}
+
+	.fetch-err__err_md {
+		font-size: 24px;
+	}
+}
