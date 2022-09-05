@@ -1,6 +1,6 @@
 import { CartIcon } from "../Navigation/js/Icons";
 import "./css/product-card.scss";
-import { formatCurrency } from "../../../utils/formatCurrency.ts";
+import { formatCurrency } from "../../../utils/formatCurrency.js";
 
 export default function ProductCard({ data }) {
   return (
