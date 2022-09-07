@@ -1,49 +1,28 @@
 @tailwind utilities;
 
+// Hack for Iphone8 compatibility
+body {
+	background-color: #222222;
+}
+
 .not-found-page {
 	@apply
-		w-full
-		h-auto
-		mt-[75px]
-		text-center
 		flex
-		flex-col
-		justify-center;
+		justify-center
+		items-center
+		mt-[75px]
+		bg-white;
 
-	// Subtract header and footer heights
-	min-height: calc(100vh - 75px - 148px);
-
-	&__title {
-		font-size: 24px;
-		font-family: "Lato-700", sans-serif;
-	}
-
-	&__err {
-		@apply
-			text-losos;
-
-		font-size: 20px;
-		font-family: "Lato-700", sans-serif;
-	}
+	//<md Header 75px, Footer - 148px
+	height: calc(100vh - 75px - 148px);
+	max-height: -webkit-fill-available;
 }
 
 @layer utilities {
 	.not-found-page {
+		//>md Header 75px, Footer - 80px
 		&_md {
-			// Subtract header and footer heights
-			min-height: calc(100vh - 75px - 80px);
-		}
-	}
-
-	.not-found-page__title {
-		&_md {
-			font-size: 36px;
-		}
-	}
-
-	.not-found-page__err {
-		&_md {
-			font-size: 30px;
+			height: calc(100vh - 75px - 80px);
 		}
 	}
 }
