@@ -6,12 +6,12 @@ import Subscribe from "../components/base/Subscribe/Subscribe";
 
 export function MainPage() {
   return (
-    <>
+    <div className="page-wrapper">
       <Promo />
       <Categories />
       <Featured />
       <Advantages />
       <Subscribe />
-    </>
+    </div>
   );
 }
