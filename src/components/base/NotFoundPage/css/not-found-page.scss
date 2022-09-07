@@ -8,6 +8,7 @@ body {
 .not-found-page {
 	@apply
 		flex
+		flex-col
 		justify-center
 		items-center
 		mt-[75px]
@@ -16,6 +17,19 @@ body {
 	//<md Header 75px, Footer - 148px
 	height: calc(100vh - 75px - 148px);
 	max-height: -webkit-fill-available;
+
+	&__title {
+		font-size: 24px;
+		font-family: "Lato-700", sans-serif;
+	}
+
+	&__err {
+		@apply
+			text-losos;
+
+		font-size: 20px;
+		font-family: "Lato-700", sans-serif;
+	}
 }
 
 @layer utilities {
@@ -23,6 +37,19 @@ body {
 		//>md Header 75px, Footer - 80px
 		&_md {
 			height: calc(100vh - 75px - 80px);
+		}
+	}
+
+
+	.not-found-page__title {
+		&_md {
+			font-size: 36px;
+		}
+	}
+
+	.not-found-page__err {
+		&_md {
+			font-size: 30px;
 		}
 	}
 }
