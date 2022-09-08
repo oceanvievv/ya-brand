@@ -20,27 +20,48 @@
 
 	&__logo {
 		@apply
-			mr-[40px]
+			mr-[32px]
 			h-[36px]
 			select-none;
 	}
 	&__control {
 		@apply
+			block
+			box-border
+			p-[8px]
+			rounded-[4px]
+			border-[1px]
+			border-solid
+			border-transparent
 			select-none
 			cursor-pointer;
+
+		transition: all 0.2s ease-in-out;
+		-webkit-tap-highlight-color: transparent;
+
+		@media (hover: hover) and (pointer: fine) {
+			&:hover {
+				background-color: rgba(170, 170, 170, 0.1);
+			}
+		}
 	}
+
+	a {
+		-webkit-tap-highlight-color: transparent;
+	}
+
 	&__menu {
 		@apply
 			flex
-			gap-[33px]
+			gap-[25px]
 			ml-auto
 			items-center;
 	}
 	&__cart-count {
 		@apply
 			absolute
-			-top-[8px]
-			ml-[22px]
+			top-[2px]
+			right-[2px]
 			pl-[4px]
 			pr-[4px]
 			text-white

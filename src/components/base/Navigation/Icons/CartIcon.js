@@ -3,9 +3,7 @@ import PropTypes from "prop-types";
 export default function CartIcon(props) {
   return (
     <div className={props.classes}>
-      <span
-        className="nav__control"
-      >
+      <span className="nav__control" style={{ paddingRight: "11px" }}>
         <svg
           width={props.width || "32"}
           height={props.height || "29"}
