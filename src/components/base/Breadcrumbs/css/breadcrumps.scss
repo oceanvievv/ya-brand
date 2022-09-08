@@ -1,0 +1,70 @@
+@tailwind utilities;
+
+.breadcrumbs-wrapper {
+	@apply
+		mt-[75px]
+		bg-[#F8F3F4]
+		w-full
+		h-auto;
+
+	.breadcrumbs {
+		@apply
+			w-full
+			h-[148px]
+			px-[18px]
+			flex
+			flex-col
+			gap-[4px]
+			justify-center
+			items-center
+			text-center;
+
+		&__title {
+			@apply
+				font-["Lato-400"]
+				text-[24px]
+				text-losos;
+		}
+
+		&__path {
+			font-size: 14px;
+
+			&_prev {
+				@apply
+					font-["Lato-300"]
+					text-dark-gray;
+			}
+
+			&_curr {
+				@apply
+					font-["Lato-700"]
+					text-losos;
+			}
+		}
+	}
+}
+
+@layer utilities {
+	.breadcrumbs-wrapper {
+		.breadcrumbs {
+			&_sm {
+				padding-left: 32px;
+				padding-right: 32px;
+			}
+
+			&_md {
+				@apply
+					gap-[0]
+					flex-row
+					justify-between;
+			}
+
+			&_xl {
+				@apply
+					max-w-[1140px]
+					ml-auto
+					mr-auto;
+			}
+		}
+	}
+}
