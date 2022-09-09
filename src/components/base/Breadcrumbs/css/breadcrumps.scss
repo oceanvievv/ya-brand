@@ -3,6 +3,7 @@
 .breadcrumbs-wrapper {
 	@apply
 		mt-[75px]
+		mb-[40px]
 		bg-[#F8F3F4]
 		w-full
 		h-auto;
@@ -65,6 +66,14 @@
 					ml-auto
 					mr-auto;
 			}
+		}
+	}
+}
+
+@layer utilities {
+	.breadcrumbs-wrapper {
+		&_sm {
+			margin-bottom: 60px;
 		}
 	}
 }
