@@ -3,17 +3,17 @@ import { formatCurrency } from "../../../utils/formatCurrency";
 
 export default function CartItem({ itemData }) {
   return (
-    <div className="cart-item">
+    <div className="cart__item">
       <div
-        className="cart-item__img"
+        className="cart__item-img"
         style={{ backgroundImage: `url(${itemData.img})` }}
       ></div>
-      <div className="cart-item__info sm:cart-item__info_sm">
-        <div className="cart-item__header">
-          <span className="cart-item__title sm:cart-item__title_sm">
+      <div className="cart__item-info sm:cart__item-info_sm">
+        <div className="cart__item-header">
+          <span className="cart__item-title sm:cart__item-title_sm">
             {itemData.title}
           </span>
-          <button className="cart-item__delete sm:cart-item__delete_sm">
+          <button className="cart__item-delete sm:cart__item-delete_sm">
             <svg
               width="13"
               height="13"
@@ -28,36 +28,36 @@ export default function CartItem({ itemData }) {
             </svg>
           </button>
         </div>
-        <div className="cart-item__body sm:cart-item__body_sm">
-          <div className="cart-item__prop">
-            <span className="cart-item__prop-name sm:cart-item__prop-name_sm">
+        <div className="cart__item-body sm:cart__item-body_sm">
+          <div className="cart__item-prop">
+            <span className="cart__item-prop-name sm:cart__item-prop-name_sm">
               Price:
             </span>
-            <span className="cart-item__prop-value sm:cart-item__prop-value_sm cart-item__prop-value_price">
+            <span className="cart__item-prop-value sm:cart__item-prop-value_sm cart__item-prop-value_price">
               {formatCurrency(itemData.price)}
             </span>
           </div>
-          <div className="cart-item__prop">
-            <span className="cart-item__prop-name sm:cart-item__prop-name_sm">
+          <div className="cart__item-prop">
+            <span className="cart__item-prop-name sm:cart__item-prop-name_sm">
               Color:
             </span>
-            <span className="cart-item__prop-value sm:cart-item__prop-value_sm">
+            <span className="cart__item-prop-value sm:cart__item-prop-value_sm">
               {itemData.color}
             </span>
           </div>
-          <div className="cart-item__prop">
-            <span className="cart-item__prop-name sm:cart-item__prop-name_sm">
+          <div className="cart__item-prop">
+            <span className="cart__item-prop-name sm:cart__item-prop-name_sm">
               Size:
             </span>
-            <span className="cart-item__prop-value sm:cart-item__prop-value_sm">
+            <span className="cart__item-prop-value sm:cart__item-prop-value_sm">
               {itemData.size}
             </span>
           </div>
-          <div className="cart-item__prop cart-item__prop_quantity">
-            <span className="cart-item__prop-name sm:cart-item__prop-name_sm">
+          <div className="cart__item-prop cart__item-prop_quantity">
+            <span className="cart__item-prop-name sm:cart__item-prop-name_sm">
               Quantity:
             </span>
-            <span className="cart-item__prop-value sm:cart-item__prop-value_sm cart-item__prop-value_quantity sm:cart-item__prop-value_quantity-sm">
+            <span className="cart__item-prop-value sm:cart__item-prop-value_sm cart__item-prop-value_quantity sm:cart__item-prop-value_quantity-sm">
               {itemData.quantity}
             </span>
           </div>

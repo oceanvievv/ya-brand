@@ -1,0 +1,132 @@
+@tailwind utilities;
+
+.cart__form {
+	@apply
+		w-full;
+
+	&-title {
+		@apply
+			mb-[20px]
+			font-["Lato-300"]
+			text-[16px]
+			text-black;
+	}
+
+	&-inputs {
+		@apply
+			mb-[24px]
+			flex
+			gap-[20px]
+			flex-col;
+	}
+
+	&-input {
+		@apply
+			w-full
+			h-[45px]
+			pt-[13px]
+			pb-[13px]
+			px-[17px]
+			font-["Lato-300"]
+			text-[13px]
+			text-black
+			border-[1px]
+			border-[#A4A4A4]
+			border-solid;
+
+		&::placeholder {
+			@apply
+				font-["Lato-300"]
+				text-[13px];
+
+			color: #B1B1B1;
+		}
+
+		&:focus {
+			@apply
+				outline-none;
+		}
+	}
+
+	&-promo-code-btn {
+		@apply
+			box-border
+			w-fit
+			px-[21px]
+			py-[11px]
+			font-["Lato-300"]
+			text-[13px]
+			text-[#575757]
+			border-[1px]
+			border-[#A4A4A4]
+			border-solid
+			whitespace-nowrap;
+	}
+}
+
+.cart__form-inputs-and-total {
+	@apply
+		flex
+		gap-[48px]
+		flex-col;
+}
+
+@layer utilities {
+	.cart__form {
+		&_sm {
+			@apply
+				px-[18px]
+				gap-[16px]
+				flex-row;
+		}
+
+		&_lg {
+			@apply
+				px-0
+				gap-[57px]
+				flex-col;
+
+			flex-basis: 35%;
+		}
+
+		&-user-input {
+			flex-basis: 50%;
+		}
+
+		&-user-input {
+			&_sm {
+				flex-grow: 1;
+				flex-basis: 50%;
+			}
+
+			&_lg {
+				flex-grow: unset;
+				flex-basis: unset;
+			}
+		}
+	}
+
+	.cart__form-inputs-and-total {
+		&_sm {
+			.cart__form-inputs {
+				flex-basis: 50%;
+			}
+
+			@apply
+				flex
+				gap-[15px]
+				flex-row;
+		}
+
+		&_lg {
+			.cart__form-inputs {
+				flex-basis: unset;
+			}
+
+			@apply
+				flex
+				gap-[48px]
+				flex-col;
+		}
+	}
+}

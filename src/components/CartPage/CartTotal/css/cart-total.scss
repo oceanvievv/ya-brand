@@ -1,0 +1,94 @@
+@tailwind utilities;
+
+.cart__total {
+	@apply
+		w-full
+		bg-[#F5F5F5]
+		px-[34px]
+		py-[40px]
+		flex
+		flex-col
+		items-end;
+
+	&-hr {
+		@apply
+			w-full
+			mb-[17px]
+			text-[#E2E2E2]
+			self-center;
+	}
+
+	&-checkout-btn {
+		@apply
+			px-[43px]
+			py-[15px]
+			bg-losos
+			font-["Lato-300"]
+			text-[16px]
+			text-white
+			self-center
+			w-full;
+	}
+}
+
+.cart__summary {
+	@apply
+		mb-[21px]
+		flex
+		gap-[12px]
+		flex-col
+		items-end;
+
+	&-main {
+		@apply
+			flex
+			gap-[8px]
+			flex-row;
+
+		&-title {
+			@apply
+				font-["Lato-300"]
+				text-[16px]
+				text-black;
+		}
+
+		&-value {
+			@apply
+				font-["Lato-700"]
+				text-[16px]
+				text-losos;
+		}
+	}
+
+	&-sub {
+		@apply
+			flex
+			flex-row
+			gap-[8px]
+			font-["Lato-400"]
+			text-[11px]
+			text-black;
+
+		&-title {
+
+		}
+
+		&-value {
+
+		}
+	}
+}
+
+@layer utilities {
+	.cart__total {
+		&_sm {
+			height: fit-content;
+			flex-basis: 50%;
+		}
+
+		&_lg {
+			flex-grow: unset;
+			flex-basis: unset;
+		}
+	}
+}
