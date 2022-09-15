@@ -29,7 +29,9 @@ export default function CartForm() {
               placeholder="Postcode / Zip"
               autoComplete="new-password"
             />
-            <div className="cart__form-promo-code-btn">Get promo-code</div>
+            <button type="button" className="cart__form-promo-code-btn">
+              Get promo-code
+            </button>
           </div>
           <CartTotal />
         </div>
