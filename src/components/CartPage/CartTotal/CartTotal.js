@@ -1,4 +1,4 @@
-import "./css/cart-total.scss";
+import "./css/cart-total.scss"
 
 export default function CartTotal() {
   return (
@@ -16,5 +16,5 @@ export default function CartTotal() {
       <hr className="cart__total-hr" />
       <button className="cart__total-checkout-btn">PROCEED TO CHECKOUT</button>
     </div>
-  );
+  )
 }

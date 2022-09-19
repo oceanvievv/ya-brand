@@ -5,5 +5,5 @@ export default function AdvantageItem({ data }) {
       <div className="advantages-item__title">{data.title}</div>
       <div className="advantages-item__descr">{data.descr}</div>
     </div>
-  );
+  )
 }

@@ -49,7 +49,7 @@ module.exports = {
             maxWidth: "1140px",
           },
         },
-      });
+      })
     },
   ],
-};
+}

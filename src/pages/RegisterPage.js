@@ -3,5 +3,5 @@ export function RegisterPage() {
     <div>
       <p>Register Page</p>
     </div>
-  );
+  )
 }

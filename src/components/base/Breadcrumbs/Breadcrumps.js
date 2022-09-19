@@ -1,4 +1,4 @@
-import "./css/breadcrumps.scss";
+import "./css/breadcrumps.scss"
 
 export default function Breadcrumps({ title, path }) {
   return (
@@ -14,5 +14,5 @@ export default function Breadcrumps({ title, path }) {
         )}
       </div>
     </div>
-  );
+  )
 }

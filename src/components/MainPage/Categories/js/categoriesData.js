@@ -1,4 +1,4 @@
-import * as Images from "./categoriesImages";
+import * as Images from "./categoriesImages"
 
 const categoriesData = {
   personalized: [
@@ -25,6 +25,6 @@ const categoriesData = {
       img: Images.Accessories,
     },
   ],
-};
+}
 
-export default categoriesData;
+export default categoriesData

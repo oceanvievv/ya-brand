@@ -1,6 +1,6 @@
-import "./css/subscribe.scss";
-import SubscribeBg from "assets/images/subscribe/subscribe_background.png";
-import SubscribePfp from "assets/images/subscribe/subscribe_pfp.png";
+import "./css/subscribe.scss"
+import SubscribeBg from "assets/images/subscribe/subscribe_background.png"
+import SubscribePfp from "assets/images/subscribe/subscribe_pfp.png"
 
 export default function Subscribe() {
   return (
@@ -53,5 +53,5 @@ export default function Subscribe() {
         </form>
       </div>
     </div>
-  );
+  )
 }

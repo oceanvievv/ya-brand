@@ -1,4 +1,4 @@
-import "./css/fetch-err.scss";
+import "./css/fetch-err.scss"
 
 export default function FetchErr({ fetchType, fetchErr }) {
   return (
@@ -10,5 +10,5 @@ export default function FetchErr({ fetchType, fetchErr }) {
         ⚠ &nbsp; {fetchErr ? fetchErr : null} &nbsp; ⚠
       </span>
     </div>
-  );
+  )
 }

@@ -1,8 +1,12 @@
-import { CartIcon } from "../Navigation/js/Icons";
-import "./css/product-card.scss";
-import { formatCurrency } from "../../../utils/formatCurrency.js";
+import "./css/product-card.scss"
+import { CartIcon } from "../Navigation/js/Icons"
+import { formatCurrency } from "../../../utils/formatCurrency.js"
+import { useDispatch } from "react-redux"
+import { addToCart } from "../../../redux/cartSlice"
 
 export default function ProductCard({ data }) {
+  const dispatch = useDispatch()
+
   return (
     <div className="featured-item">
       <div className="featured-item__img">
@@ -10,9 +14,7 @@ export default function ProductCard({ data }) {
         <div className="featured-item__img_hovered">
           <button
             className="featured-item__to-cart-btn"
-            onClick={() => {
-              console.log("Added to cart");
-            }}
+            onClick={() => dispatch(addToCart(data))}
           >
             <CartIcon
               cartCount={0}
@@ -30,5 +32,5 @@ export default function ProductCard({ data }) {
         <div className="featured-item__price">{formatCurrency(data.price)}</div>
       </div>
     </div>
-  );
+  )
 }

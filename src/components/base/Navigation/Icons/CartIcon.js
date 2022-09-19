@@ -1,6 +1,9 @@
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"
+import { useSelector } from "react-redux"
 
 export default function CartIcon(props) {
+  const itemsTotalCount = useSelector((state) => state.cart.itemsTotalCount)
+
   return (
     <div className={props.classes}>
       <span className="nav__control" style={{ paddingRight: "11px" }}>
@@ -17,18 +20,17 @@ export default function CartIcon(props) {
           />
         </svg>
       </span>
-      {props.cartCount > 0 && (
+      {itemsTotalCount > 0 && (
         <div className="nav__cart-count">
-          {props.cartCount > 99 ? "+99" : props.cartCount}
+          {itemsTotalCount > 99 ? "+99" : itemsTotalCount}
         </div>
       )}
     </div>
-  );
+  )
 }
 
 CartIcon.propTypes = {
-  cartCount: PropTypes.number.isRequired,
   width: PropTypes.number,
   height: PropTypes.number,
   classes: PropTypes.string,
-};
+}

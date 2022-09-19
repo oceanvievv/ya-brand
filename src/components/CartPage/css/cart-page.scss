@@ -1,7 +1,7 @@
 @tailwind utilities;
 
 .cart__content {
-	@apply
+  @apply
 		mb-[96px]
 		max-w-[1140px]
 		px-[9px]
@@ -11,7 +11,7 @@
 }
 
 .cart__items-and-manage {
-	@apply
+  @apply
 		w-[100%]
 		gap-[30px]
 		flex
@@ -19,7 +19,7 @@
 }
 
 .cart__items {
-	@apply
+  @apply
 		flex
 		flex-col
 		gap-[32px]
@@ -27,7 +27,7 @@
 }
 
 .cart__manage {
-	@apply
+  @apply
 		px-[8px]
 		w-full
 		flex
@@ -36,8 +36,8 @@
 		flex-nowrap
 		justify-center;
 
-	&-btn {
-		@apply
+  &-btn {
+    @apply
 			w-full
 			px-[17px]
 			py-[8px]
@@ -48,81 +48,76 @@
 			text-[12px]
 			text-[#575757]
 			whitespace-nowrap;
-	}
+  }
 }
 
 @layer utilities {
-	.cart__content {
-		&_md {
-			@apply
-				gap-[64px]
-				mb-[128px]
-				px-[18px];
-		}
+  .cart__content {
+    &_md {
+			margin-bottom: 128px;
+			padding-left: auto;
+			padding-right: auto;
+			gap: 64px;
+    }
 
-		&_lg {
-			@apply
+    &_lg {
+      @apply
 				justify-between
 				mx-auto
 				px-[32px]
 				flex-row;
-		}
-	}
+    }
+  }
 
-	.cart__items-and-manage {
-		&_sm {
-			@apply
-				gap-[62px];
-		}
+  .cart__items-and-manage {
+    &_sm {
+			gap: 62px;
+    }
 
-		&_lg {
-			@apply
-				gap-[72px];
+    &_lg {
+			gap: 72px;
+      flex-basis: 55%;
+    }
+  }
 
-			flex-basis: 55%;
-		}
-	}
+  .cart__items-and-manage {
+    &_lg {
+      flex-basis: 55%;
+    }
+  }
 
-	.cart__items-and-manage {
-		&_lg {
-			flex-basis: 55%;
-		}
-	}
+  .cart__items {
+    &_sm {
+			margin-bottom: 62px;
+      gap: 40px;
+    }
+  }
 
-	.cart__items {
-		&_sm {
-			@apply
-				mb-[62px];
-
-			gap: 40px;
-		}
-	}
-
-	.cart__manage {
-		&_sm {
-			@apply
+  .cart__manage {
+    &_sm {
+      @apply
 				mb-[48px]
 				px-[0]
 				max-w-[518px]
 				gap-[48px]
 				mx-auto;
-		}
+    }
 
-		&-btn {
-			&_sm {
-				@apply
-				px-[38px]
-				py-[17px]
-				font-["Lato-300"]
-				text-[14px]
-				uppercase;
-			}
-		}
-	}
+    &-btn {
+      &_sm {
+        @apply
+					px-[38px]
+					py-[17px]
+					font-["Lato-300"]
+					text-[14px]
+					uppercase;
+      }
+    }
+  }
 }
 
 @media (hover: hover) and (pointer: fine) {
-	.cart__manage-btn:hover {
-		background-color: #ECECEC;
-	}
+  .cart__manage-btn:hover {
+    background-color: #ECECEC;
+  }
 }

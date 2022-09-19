@@ -1,5 +1,5 @@
-import "./css/promo.scss";
-import PromoImage from "assets/images/promo/promo_1.png";
+import "./css/promo.scss"
+import PromoImage from "assets/images/promo/promo_1.png"
 
 export function Promo() {
   return (
@@ -29,5 +29,5 @@ export function Promo() {
         </div>
       </div>
     </div>
-  );
+  )
 }

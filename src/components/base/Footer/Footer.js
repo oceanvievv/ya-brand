@@ -1,5 +1,5 @@
-import "./css/footer.scss";
-import * as FooterIcons from "./js/FooterIcons";
+import "./css/footer.scss"
+import * as FooterIcons from "./js/FooterIcons"
 
 export default function Footer() {
   return (
@@ -40,5 +40,5 @@ export default function Footer() {
         </div>
       </div>
     </div>
-  );
+  )
 }

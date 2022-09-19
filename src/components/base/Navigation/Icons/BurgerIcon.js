@@ -17,5 +17,5 @@ export default function BurgerIcon() {
         />
       </svg>
     </span>
-  );
+  )
 }

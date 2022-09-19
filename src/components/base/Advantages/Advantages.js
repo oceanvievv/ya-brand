@@ -1,6 +1,6 @@
-import "./css/advantages.scss";
-import advantagesData from "./js/advantagesData";
-import AdvantageItem from "./AdvantageItem";
+import "./css/advantages.scss"
+import advantagesData from "./js/advantagesData"
+import AdvantageItem from "./AdvantageItem"
 
 export default function Advantages() {
   return (
@@ -11,5 +11,5 @@ export default function Advantages() {
         ))}
       </div>
     </div>
-  );
+  )
 }

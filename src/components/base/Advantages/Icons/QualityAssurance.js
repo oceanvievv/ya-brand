@@ -12,5 +12,5 @@ export default function QualityAssurance() {
         fill="#F16D7F"
       />
     </svg>
-  );
+  )
 }

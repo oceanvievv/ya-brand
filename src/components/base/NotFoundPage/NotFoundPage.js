@@ -1,4 +1,4 @@
-import "./css/not-found-page.scss";
+import "./css/not-found-page.scss"
 
 export default function NotFoundPage() {
   return (
@@ -8,5 +8,5 @@ export default function NotFoundPage() {
       </span>
       <span className="not-found-page__err md:not-found-page__err_md">404</span>
     </div>
-  );
+  )
 }

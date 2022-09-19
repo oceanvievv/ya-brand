@@ -1,6 +1,6 @@
-import "./css/categories.scss";
-import categoriesData from "./js/categoriesData";
-import Category from "./Category";
+import "./css/categories.scss"
+import categoriesData from "./js/categoriesData"
+import Category from "./Category"
 
 export function Categories() {
   return (
@@ -20,5 +20,5 @@ export function Categories() {
         ))}
       </div>
     </div>
-  );
+  )
 }

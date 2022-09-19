@@ -1,19 +1,26 @@
-import "./css/cart-item.scss";
-import { formatCurrency } from "../../../utils/formatCurrency";
+import "./css/cart-item.scss"
+import { formatCurrency } from "../../../utils/formatCurrency"
+import { useDispatch } from "react-redux"
+import { removeFromCart } from "../../../redux/cartSlice"
 
 export default function CartItem({ itemData }) {
+  const dispatch = useDispatch()
+
   return (
     <div className="cart__item">
       <div
         className="cart__item-img"
-        style={{ backgroundImage: `url(${itemData.img})` }}
+        style={{ backgroundImage: `url(${itemData.image})` }}
       ></div>
       <div className="cart__item-info sm:cart__item-info_sm">
         <div className="cart__item-header">
           <span className="cart__item-title sm:cart__item-title_sm">
             {itemData.title}
           </span>
-          <button className="cart__item-delete sm:cart__item-delete_sm">
+          <button
+            className="cart__item-delete sm:cart__item-delete_sm"
+            onClick={() => dispatch(removeFromCart(itemData.id))}
+          >
             <svg
               width="13"
               height="13"
@@ -64,5 +71,5 @@ export default function CartItem({ itemData }) {
         </div>
       </div>
     </div>
-  );
+  )
 }

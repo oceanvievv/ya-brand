@@ -3,5 +3,5 @@ export function ProductPage() {
     <div>
       <p>Product Page</p>
     </div>
-  );
+  )
 }

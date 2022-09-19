@@ -1,18 +1,18 @@
-import "./css/featured.scss";
-import ProductCard from "../../base/ProductCard/ProductCard";
-import { useEffect, useState } from "react";
-import { fetchFeaturedProducts } from "../../../data/data";
-import FetchErr from "../../base/FetchErr/FetchErr";
-import Loader from "../../base/Loader/Loader";
+import "./css/featured.scss"
+import ProductCard from "../../base/ProductCard/ProductCard"
+import { useEffect, useState } from "react"
+import { fetchFeaturedProducts } from "../../../data/data"
+import FetchErr from "../../base/FetchErr/FetchErr"
+import Loader from "../../base/Loader/Loader"
 
 export default function Featured() {
-  const [products, setProducts] = useState([]);
-  const [isFetching, setIsFetching] = useState(true);
-  const [fetchErr, setFetchErr] = useState(null);
+  const [products, setProducts] = useState([])
+  const [isFetching, setIsFetching] = useState(true)
+  const [fetchErr, setFetchErr] = useState(null)
 
   useEffect(() => {
-    fetchFeaturedProducts(setProducts, setFetchErr, setIsFetching).then();
-  }, []);
+    fetchFeaturedProducts(setProducts, setFetchErr, setIsFetching).then()
+  }, [])
 
   return (
     <div className="featured-wrapper featured-wrapper_md featured-wrapper_lg">
@@ -44,5 +44,5 @@ export default function Featured() {
         <FetchErr fetchType={"FEATURED PRODUCTS"} fetchErr={fetchErr} />
       )}
     </div>
-  );
+  )
 }

@@ -3,5 +3,5 @@ export function CatalogPage() {
     <div>
       <p>Catalog Page</p>
     </div>
-  );
+  )
 }

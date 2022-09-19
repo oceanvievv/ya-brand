@@ -1,5 +1,5 @@
-import "./css/cart-form.scss";
-import CartTotal from "../CartTotal/CartTotal";
+import "./css/cart-form.scss"
+import CartTotal from "../CartTotal/CartTotal"
 
 export default function CartForm() {
   return (
@@ -37,5 +37,5 @@ export default function CartForm() {
         </div>
       </div>
     </form>
-  );
+  )
 }

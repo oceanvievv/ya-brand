@@ -1,4 +1,4 @@
-import * as Icons from "./Icons";
+import * as Icons from "./Icons"
 
 const advantagesData = [
   {
@@ -19,6 +19,6 @@ const advantagesData = [
     descr:
       "Worldwide delivery on all. Authoritatively morph next-generation innovation with extensive models.",
   },
-];
+]
 
-export default advantagesData;
+export default advantagesData

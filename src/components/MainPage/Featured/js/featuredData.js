@@ -1,4 +1,4 @@
-import * as Images from "./featuredImages";
+import * as Images from "./featuredImages"
 
 const featuredData = [
   {
@@ -43,6 +43,6 @@ const featuredData = [
       "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     price: "52.00",
   },
-];
+]
 
-export default featuredData;
+export default featuredData

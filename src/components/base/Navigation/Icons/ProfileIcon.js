@@ -19,5 +19,5 @@ export default function ProfileIcon() {
         </svg>
       </span>
     </div>
-  );
+  )
 }

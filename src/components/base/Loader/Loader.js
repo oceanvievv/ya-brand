@@ -1,4 +1,4 @@
-import "./css/loader.scss";
+import "./css/loader.scss"
 
 export default function Loader() {
   return (
@@ -14,5 +14,5 @@ export default function Loader() {
         <div></div>
       </div>
     </div>
-  );
+  )
 }

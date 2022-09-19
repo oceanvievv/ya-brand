@@ -1,22 +1,18 @@
-import { Navigate, Route, Routes } from "react-router-dom";
-import { MainPage } from "./pages/MainPage";
-import { CatalogPage } from "./pages/CatalogPage";
-import { ProductPage } from "./pages/ProductPage";
-import { CartPage } from "./pages/CartPage";
-import { RegisterPage } from "./pages/RegisterPage";
-import { Navigation } from "./components/base/Navigation/Navigation";
-
-import "./assets/fonts/Lato/Lato.scss";
-import { useState } from "react";
-import Footer from "./components/base/Footer/Footer";
-import NotFoundPage from "./components/base/NotFoundPage/NotFoundPage";
+import { Navigate, Route, Routes } from "react-router-dom"
+import { MainPage } from "./pages/MainPage"
+import { CatalogPage } from "./pages/CatalogPage"
+import { ProductPage } from "./pages/ProductPage"
+import { CartPage } from "./pages/CartPage"
+import { RegisterPage } from "./pages/RegisterPage"
+import { Navigation } from "./components/base/Navigation/Navigation"
+import "./assets/fonts/Lato/Lato.scss"
+import Footer from "./components/base/Footer/Footer"
+import NotFoundPage from "./components/base/NotFoundPage/NotFoundPage"
 
 function App() {
-  const [cartCount, setCartCount] = useState(1);
-
   return (
     <>
-      <Navigation cartCount={cartCount} />
+      <Navigation />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/catalog" element={<CatalogPage />} />
@@ -28,7 +24,7 @@ function App() {
       </Routes>
       <Footer />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -12,5 +12,5 @@ export default function Category({ data, imgClass }) {
         <div className="category__info_title">{data.title}</div>
       </div>
     </div>
-  );
+  )
 }
