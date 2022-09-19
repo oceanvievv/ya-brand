@@ -13,7 +13,7 @@ export function Navigation() {
         <Icons.SearchIcon />
         <div className="nav__menu">
           <Icons.BurgerIcon />
-          <NavLink to="/register" className="hidden sm:nav__menu_not-mobile">
+          <NavLink to="/profile" className="hidden sm:nav__menu_not-mobile">
             <Icons.ProfileIcon />
           </NavLink>
           <NavLink

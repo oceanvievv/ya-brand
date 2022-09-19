@@ -3,7 +3,7 @@ import { MainPage } from "./pages/MainPage"
 import { CatalogPage } from "./pages/CatalogPage"
 import { ProductPage } from "./pages/ProductPage"
 import { CartPage } from "./pages/CartPage"
-import { RegisterPage } from "./pages/RegisterPage"
+import { ProfilePage } from "./pages/ProfilePage"
 import { Navigation } from "./components/base/Navigation/Navigation"
 import "./assets/fonts/Lato/Lato.scss"
 import Footer from "./components/base/Footer/Footer"
@@ -18,7 +18,7 @@ function App() {
         <Route path="/catalog" element={<CatalogPage />} />
         <Route path="/product" element={<ProductPage />} />
         <Route path="/cart" element={<CartPage />} />
-        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
         <Route path="/404" element={<NotFoundPage />} />
         <Route path="*" element={<Navigate replace to="/404" />} />
       </Routes>
