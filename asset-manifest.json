@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ya-brand/static/css/main.399e7c6f.css",
+    "main.js": "/ya-brand/static/js/main.2734d9b8.js",
+    "static/media/promo_4.png": "/ya-brand/static/media/promo_4.f4e9d4d6020a2920cdea.png",
+    "static/media/promo_1.png": "/ya-brand/static/media/promo_1.6463a99abd31e6625c97.png",
+    "static/media/promo_3.png": "/ya-brand/static/media/promo_3.4a616afc1d6381d50687.png",
+    "static/media/promo_2.png": "/ya-brand/static/media/promo_2.ef334426e77afd369605.png",
+    "static/media/promo_5.png": "/ya-brand/static/media/promo_5.1d6a09985e1a88355334.png",
+    "static/media/subscribe_background.png": "/ya-brand/static/media/subscribe_background.2e72fc7ee6a973c76e23.png",
+    "static/media/Lato-Light.ttf": "/ya-brand/static/media/Lato-Light.c7400fcad9e48ca9043f.ttf",
+    "static/media/Lato-Regular.ttf": "/ya-brand/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "static/media/Lato-Bold.ttf": "/ya-brand/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
+    "static/media/subscribe_pfp.png": "/ya-brand/static/media/subscribe_pfp.7c3abd1fc4433dd17060.png",
+    "static/media/Lato-Black.ttf": "/ya-brand/static/media/Lato-Black.57dee8aface5572f9101.ttf",
+    "index.html": "/ya-brand/index.html",
+    "main.399e7c6f.css.map": "/ya-brand/static/css/main.399e7c6f.css.map",
+    "main.2734d9b8.js.map": "/ya-brand/static/js/main.2734d9b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.399e7c6f.css",
+    "static/js/main.2734d9b8.js"
+  ]
+}
